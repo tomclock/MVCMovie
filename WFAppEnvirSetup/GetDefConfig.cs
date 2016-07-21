@@ -129,7 +129,7 @@ namespace WFAppEnvirSetup
                     }
                     fs.Close();  
                 }
-                string tempTime = DateTime.Now.ToString();
+                string tempTime = DateTime.Now.ToString("yyyyMMddHHmmss");
                 File.Copy(path, path + tempTime);
                 if(File.Exists(path + tempTime))
                 {
